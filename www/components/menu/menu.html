@@ -8,6 +8,10 @@
         <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
         </button>
       </ion-nav-buttons>
+      <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-gear-b" menu-toggle="right">
+        </button>
+      </ion-nav-buttons>
     </ion-nav-bar>
     <ion-nav-view name="menuContent"></ion-nav-view>
     <ion-footer-bar align-title="left" class="bar-assertive">
@@ -34,4 +38,7 @@
       </ion-list>
     </ion-content>
   </ion-side-menu>
+
+  <ng-include src="'components/infomation/infomation.html'"></ng-include>
+
 </ion-side-menus>
