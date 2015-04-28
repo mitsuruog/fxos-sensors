@@ -1,0 +1,20 @@
+<ion-view view-title="{{title}}">
+  <ion-content>
+    <div class="card">
+      <div class="item item-text-wrap">
+        <div class="row">
+          <div class="col col-25">x-axis</div>
+          <div class="col">{{acceleration.x | number:3}} m/s<sup>2</sup></div>
+        </div>
+        <div class="row">
+          <div class="col col-25">y-axis</div>
+          <div class="col">{{acceleration.y | number:3}} m/s<sup>2</sup></div>
+        </div>
+        <div class="row">
+          <div class="col col-25">z-axis</div>
+          <div class="col">{{acceleration.z | number:3}} m/s<sup>2</sup></div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
