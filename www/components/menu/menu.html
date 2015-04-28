@@ -19,8 +19,12 @@
       </div>
       <h1 class="title"></h1>
       <div class="buttons">
-        <button class="button button-outline button-light" ng-click="toggleLockOrientation()">
-          {{getLockState()}}
+        <button class="button button-icon icon"
+          ng-class="{
+            'ion-locked': isLock,
+            'ion-unlocked': !isLock
+          }"
+          ng-click="toggleLockOrientation()">
         </button>
       </div>
     </ion-footer-bar>

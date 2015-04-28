@@ -17,15 +17,14 @@
       })
     });
 
+    // 初期起動時は画面の回転をロックする
+    $scope.screen.mozLockOrientation($scope.screen.mozOrientation);
+
     ////////////
 
     $scope.toggleLockOrientation = function() {
       $scope.isLock ? $scope.screen.mozUnlockOrientation() : $scope.screen.mozLockOrientation($scope.screen.mozOrientation);
       $scope.isLock = !$scope.isLock;
-    }
-
-    $scope.getLockState = function() {
-      return $scope.isLock ? 'Lock': 'UnLock';
     }
 
   }
