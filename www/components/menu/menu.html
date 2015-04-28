@@ -10,6 +10,16 @@
       </ion-nav-buttons>
     </ion-nav-bar>
     <ion-nav-view name="menuContent"></ion-nav-view>
+    <ion-footer-bar align-title="left" class="bar-assertive">
+      <div class="buttons">
+      </div>
+      <h1 class="title"></h1>
+      <div class="buttons">
+        <button class="button button-outline button-light" ng-click="toggleLockOrientation()">
+          {{getLockState()}}
+        </button>
+      </div>
+    </ion-footer-bar>
   </ion-side-menu-content>
 
   <ion-side-menu side="left">
