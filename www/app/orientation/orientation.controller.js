@@ -26,9 +26,7 @@
     });
 
     function handleDeviceOrientation(e) {
-      $scope.orientation.alpha = e.alpha;
-      $scope.orientation.gamma = e.gamma;
-      $scope.orientation.beta = e.beta;
+      $scope.orientation = e;
       // [MEMO]これ出すと大変なことにw
       $log.debug('Orientation:' + JSON.stringify($scope.orientation));
       $rootScope.$apply();
