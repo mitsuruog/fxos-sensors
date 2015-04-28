@@ -1,1 +1,3 @@
-angular.module('sensors.core', []);
+angular.module('sensors.core', [
+  'ngToast'
+]);
