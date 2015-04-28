@@ -1,0 +1,20 @@
+<ion-view view-title="{{title}}">
+  <ion-content>
+    <div class="card">
+      <div class="item item-text-wrap">
+        <div class="row">
+          <div class="col col-33">latitude</div>
+          <div class="col">{{geolocation.latitude | number:8}}</div>
+        </div>
+        <div class="row">
+          <div class="col col-33">longitude</div>
+          <div class="col">{{geolocation.longitude | number:8}}</div>
+        </div>
+        <div class="row">
+          <div class="col col-33">altitude</div>
+          <div class="col">{{geolocation.altitude | number:2}} m</div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

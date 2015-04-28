@@ -14,7 +14,9 @@ angular.module('sensors', [
   'Proximity',
   'Orientation',
   'Acceleration',
-  'Light'
+  'Geolocation',
+  'Light',
+  // 'Rotation' サポート外
 ])
 
 .config(function($compileProvider) {
