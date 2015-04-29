@@ -7,7 +7,8 @@
 angular.module('sensors', [
   'ionic',
   'sensors.components',
-  'sensors.core'
+  'sensors.core',
+  'uiGmapgoogle-maps'
 ])
 
 .constant('menuItems', [
@@ -15,6 +16,7 @@ angular.module('sensors', [
   'Orientation',
   'Acceleration',
   'Geolocation',
+  // 'Compass', うまく出ない？？
   'Light',
   // 'Rotation' サポート外
 ])
@@ -36,6 +38,13 @@ angular.module('sensors', [
     //   // org.apache.cordova.statusbar required
     //   StatusBar.styleDefault();
     // }
+  });
+})
+
+.config(function(uiGmapGoogleMapApiProvider) {
+  uiGmapGoogleMapApiProvider.configure({
+    v: '3.17',
+    libraries: 'weather,geometry,visualization'
   });
 })
 

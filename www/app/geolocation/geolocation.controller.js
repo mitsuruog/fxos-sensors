@@ -51,7 +51,26 @@
     function render(position) {
       $log.debug('Geolocation:' + position.coords);
       $scope.geolocation = position.coords;
-      if(!$rootScope.$$phase) {
+      $scope.map = {
+        center: {
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude
+        },
+        zoom: 16,
+        options: {
+          draggable: false,
+          mapTypeControl: false,
+          streetViewControl: false
+        }
+      };
+      $scope.marker = {
+        id: 0,
+        coords: {
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude
+        }
+      };
+      if (!$rootScope.$$phase) {
         $rootScope.$apply();
       }
     }
