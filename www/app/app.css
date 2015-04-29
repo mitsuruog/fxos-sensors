@@ -1,5 +1,3 @@
-.angular-google-map-container { height: 300px; }
-
-.icon-proximity {
-  padding: calc(50% - 1em);
+.angular-google-map-container {
+  height: 300px;
 }
