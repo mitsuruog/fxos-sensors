@@ -4,11 +4,12 @@
   angular.module('sensors.components')
     .controller('MenuController', MenuController);
 
-  function MenuController($scope, $window, menuItems) {
+  function MenuController($scope, $window, menuItems, openLinkTobrowser) {
 
     $scope.items = [];
     $scope.isLock = true;
     $scope.screen = $window.screen;
+    $scope.openLink = openLinkTobrowser.open;
 
     angular.forEach(menuItems, function(item) {
       $scope.items.push({
