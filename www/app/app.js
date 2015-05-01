@@ -11,16 +11,6 @@ angular.module('sensors', [
   'uiGmapgoogle-maps'
 ])
 
-.constant('menuItems', [
-  'Light',
-  'Orientation',
-  'Acceleration',
-  'Geolocation',
-  'Proximity',
-  // 'Compass', うまく出ない？？
-  // 'Rotation' サポート外？？
-])
-
 .config(function($compileProvider) {
   // see FirefoxOSのパッケージ型アプリとAngularJSのngSrc/ngHref - Qiita http://qiita.com/_likr/items/cc1731561e2221927b07
   $compileProvider.imgSrcSanitizationWhitelist(/^\s*((https?|ftp|file|app):|data:image\/)/);

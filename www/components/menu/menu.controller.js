@@ -4,10 +4,11 @@
   angular.module('sensors.components')
     .controller('MenuController', MenuController);
 
-  function MenuController($scope, $window, menuItems, openLinkTobrowser) {
+  function MenuController($scope, $window, menuItems, appInfomationLink, openLinkTobrowser) {
 
     $scope.items = [];
     $scope.isLock = false;
+    $scope.link = appInfomationLink;
     $scope.screen = $window.screen;
     $scope.openLink = openLinkTobrowser.open;
 
