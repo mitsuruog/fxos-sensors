@@ -7,7 +7,7 @@
   function MenuController($scope, $window, menuItems, openLinkTobrowser) {
 
     $scope.items = [];
-    $scope.isLock = true;
+    $scope.isLock = false;
     $scope.screen = $window.screen;
     $scope.openLink = openLinkTobrowser.open;
 
@@ -19,7 +19,8 @@
     });
 
     // 初期起動時は画面の回転をロックする
-    $scope.screen.mozLockOrientation($scope.screen.mozOrientation);
+    // [MEMO] インストール後の初回起動時と通常の再起動時で挙動が異なるので様子見
+    //$scope.screen.mozLockOrientation($scope.screen.mozOrientation);
 
     ////////////
 
