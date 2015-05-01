@@ -1,6 +1,7 @@
 {
   "name": "sensors",
-  "description": "A Hello World app",
+  "version": "0.0.1",
+  "description": "A device sensor information reader app for Firefox OS",
   "launch_path": "/www/index.html",
   "icons": {
     "16": "/icons/icon16x16.png",
@@ -8,10 +9,14 @@
     "60": "/icons/icon60x60.png",
     "128": "/icons/icon128x128.png"
   },
-  "type": "web",
+  "developer": {
+    "name": "mitsuruog",
+    "url": "https://github.com/mitsuruog"
+  },
+  "type": "privileged",
   "permissions": {
     "geolocation": {
-      "description": "Why use"
+      "description": "Marking out user location"
     }
   }
 }
