@@ -12,13 +12,13 @@ angular.module('sensors', [
 ])
 
 .constant('menuItems', [
-  'Proximity',
+  'Light',
   'Orientation',
   'Acceleration',
   'Geolocation',
+  'Proximity',
   // 'Compass', うまく出ない？？
-  'Light',
-  // 'Rotation' サポート外
+  // 'Rotation' サポート外？？
 ])
 
 .config(function($compileProvider) {
